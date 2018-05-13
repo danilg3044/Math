@@ -37,6 +37,6 @@ public class MathControllerIntegrationTest {
 	public void testControllerSubtractMethod() throws Exception {
 		MockHttpServletResponse response = mvc.perform(delete("/math/subtract/3/2").accept(MediaType.APPLICATION_JSON)).andReturn().getResponse();
 		assertThat(response.getStatus()).isEqualTo(HttpStatus.OK.value());
-		assertThat(response.getContentAsString()).isEqualTo("0");
+		assertThat(response.getContentAsString()).isEqualTo("1");
 	}
 }
