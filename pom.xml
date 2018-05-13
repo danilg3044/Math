@@ -69,6 +69,7 @@
 						com.daniel.math.IntegrationTest
 					</excludedGroups>	
 					<skipTests>${skipUTs}</skipTests>
+					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
 
