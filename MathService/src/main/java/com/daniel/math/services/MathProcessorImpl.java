@@ -12,7 +12,7 @@ public class MathProcessorImpl implements MathProcessor {
 		catch (InterruptedException e) {
 		}*/
 	}
-	
+
 	@Override
 	public int add(int x, int y) {
 		delay();
