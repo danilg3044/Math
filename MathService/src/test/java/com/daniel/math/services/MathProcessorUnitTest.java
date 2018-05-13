@@ -24,6 +24,6 @@ public class MathProcessorUnitTest {
 	
 	@Test
 	public void testSubtract() {
-		assertThat(mathProcessor.subtract(11, 3)).isNotEqualTo(8);
+		assertThat(mathProcessor.subtract(11, 3)).isNotEqualTo(9);
 	}
 }
