@@ -19,7 +19,7 @@ public class MathProcessorUnitTest {
 	
 	@Test
 	public void testAdd() {
-		assertThat(mathProcessor.add(1, 2)).isEqualTo(13);
+		assertThat(mathProcessor.add(1, 2)).isEqualTo(3);
 	}
 	
 	@Test
