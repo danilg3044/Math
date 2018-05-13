@@ -83,6 +83,7 @@
 					<groups>
 						com.daniel.math.IntegrationTest
 					</groups>
+					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
 		</plugins>
