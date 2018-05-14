@@ -1,7 +1,7 @@
 package com.daniel.math.services;
 
 import org.springframework.stereotype.Component;
-
+///////////
 @Component
 public class MathProcessorImpl implements MathProcessor {
 
