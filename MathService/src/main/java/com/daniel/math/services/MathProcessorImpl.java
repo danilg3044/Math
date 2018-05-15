@@ -20,7 +20,6 @@ public class MathProcessorImpl implements MathProcessor {
 		return x + y;
 	}
 
-	// subtract method
 	@Override
 	public int subtract(int x, int y) {
 		delay();
