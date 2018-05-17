@@ -7,7 +7,7 @@ public class MathProcessorImpl implements MathProcessor {
 
 	private void delay() {
 		/*try {
-			Thread.sleep(1024);
+			Thread.sleep(2048);
 		}
 		catch (InterruptedException e) {
 		}*/
