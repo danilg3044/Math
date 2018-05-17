@@ -6,11 +6,11 @@ import org.springframework.stereotype.Component;
 public class MathProcessorImpl implements MathProcessor {
 
 	private void delay() {
-		try {
+		/*try {
 			Thread.sleep(2048);
 		}
 		catch (InterruptedException e) {
-		}
+		}*/
 	}
 
 	@Override
