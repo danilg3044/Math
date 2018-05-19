@@ -16,5 +16,10 @@ pipeline {
         build 'Math Integration Tests'
       }
     }
+    stage('Package') {
+      steps {
+        build 'Math package'
+      }
+    }
   }
 }
