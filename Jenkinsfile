@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Integration Tests') {
       steps {
-        build 'Integration Tests'
+        build 'Math Integration Tests'
       }
     }
   }
