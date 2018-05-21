@@ -7,7 +7,7 @@ node {
     
     stage('Build image') {
         //build job: 'Math Package', parameters: [string(name: 'BRANCH', value: 'master')]
-        app = docker.build("mathapp:0.0.1", "Math/MathWebApp")
+        app = docker.build("mathapp:0.0.1", "MathWebApp")
     }
 
     stage('Push image') {
