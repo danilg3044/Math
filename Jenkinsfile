@@ -1,8 +1,11 @@
 node {
     def app
 
+	tools {
+        jdk 'JDK'
+    }
+    
 	stage('Preparation') { // for display purposes
-	  javaHome = tool 'JDK'
       mvnHome = tool 'maven'
    }
    
@@ -12,7 +15,6 @@ node {
     
     stage('Build image') {
         //build job: 'Math Package', parameters: [string(name: 'BRANCH', value: 'master')]
-        bat("SET JAVA_HOME=${javaHome}")
         bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
         app = docker.build("mathapp:0.0.1", "\"${WORKSPACE}/MathWebApp\"")
     }
