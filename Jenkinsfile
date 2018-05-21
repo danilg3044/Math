@@ -18,7 +18,7 @@ node {
     stage('Push image') {
         //docker.withServer("https://hub.docker.com/", "docker-id") {
             app.push("${env.BUILD_NUMBER}")
-            app.push("0.0.1")
+            //app.push("0.0.1")
         //}
     }
 }
