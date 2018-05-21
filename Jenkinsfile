@@ -1,13 +1,17 @@
 node {
     def app
 
+	stage('Preparation') { // for display purposes
+      mvnHome = tool 'maven'
+   }
+   
     stage('Clone repository') {
         checkout scm
     }
     
     stage('Build image') {
         //build job: 'Math Package', parameters: [string(name: 'BRANCH', value: 'master')]
-        bat(/"${maven}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+        bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
         app = docker.build("mathapp:0.0.1", "\"${WORKSPACE}/MathWebApp\"")
     }
 
