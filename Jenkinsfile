@@ -7,6 +7,7 @@ node {
     
     stage('Build image') {
         //build job: 'Math Package', parameters: [string(name: 'BRANCH', value: 'master')]
+        bat(/"${maven}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
         app = docker.build("mathapp:0.0.1", "\"${WORKSPACE}/MathWebApp\"")
     }
 
