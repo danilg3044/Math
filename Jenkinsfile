@@ -1,13 +1,9 @@
 node {
     def app
 
-	tools {
-        jdk 'JDK'
-    }
-    
 	stage('Preparation') { // for display purposes
       mvnHome = tool 'maven'
-   }
+    }
    
     stage('Clone repository') {
         checkout scm
