@@ -12,7 +12,7 @@ node {
     stage('Build image') {
         //build job: 'Math Package', parameters: [string(name: 'BRANCH', value: 'master')]
         bat(/"${mvnHome}\bin\mvn" -Dmaven.test.skip clean package/)
-        app = docker.build("mathapp:0.0.1", "./MathWebApp")
+        app = docker.build("dckr117/mathapp:0.0.1", "./MathWebApp")
     }
 
     stage('Push image') {
