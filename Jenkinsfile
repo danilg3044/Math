@@ -16,7 +16,7 @@ node {
     }
 
     stage('Push image') {
-        docker.withRegistry("https://index.docker.io/v1/dckr117", "docker-id") {
+        docker.withRegistry("https://index.docker.io/v1/dckr117/repo", "docker-id") {
             app.push("${env.BUILD_NUMBER}")
             app.push("0.0.1")
         }
